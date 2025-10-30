@@ -157,3 +157,78 @@ footer {
   display: inline-block;
   margin-top: 20px;
 }
+/* Paleta leve */
+body {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+nav a {
+  color: #002b5c;
+}
+
+.hero {
+  background-color: #eaf2f8;
+}
+
+.btn {
+  background-color: #007bff;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+}
+
+/* Rodapé */
+footer {
+  background-color: #f0f0f0;
+  padding: 40px 20px 20px;
+  font-size: 0.9em;
+}
+
+.rodape {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.coluna {
+  flex: 1;
+  min-width: 200px;
+}
+
+.coluna h4 {
+  margin-bottom: 10px;
+  color: #002b5c;
+}
+
+.coluna ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.coluna ul li {
+  margin-bottom: 8px;
+}
+
+.coluna ul a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.coluna ul a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  color: #666;
+}
