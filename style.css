@@ -1,8 +1,9 @@
+/* Layout geral */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif;
   color: #333;
-  background-color: #fff;
+  background-color: #f9f9f9;
 }
 
 .container {
@@ -11,8 +12,10 @@ body {
   margin: auto;
 }
 
+/* Cabeçalho */
 header {
-  background-color: #002b5c;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
   padding: 20px 0;
   display: flex;
   align-items: center;
@@ -33,13 +36,14 @@ nav ul {
 }
 
 nav a {
-  color: #fff;
+  color: #002b5c;
   text-decoration: none;
   font-weight: bold;
 }
 
+/* Hero */
 .hero {
-  background-color: #f5f5f5;
+  background-color: #eaf2f8;
   text-align: center;
   padding: 60px 20px;
 }
@@ -55,15 +59,22 @@ nav a {
 }
 
 .btn {
-  background-color: #f57c00;
+  background-color: #007bff;
   color: #fff;
   padding: 15px 30px;
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
+  display: inline-block;
 }
 
-.produtos, .sobre, .contato {
+.btn:hover {
+  background-color: #0056b3;
+  transition: background-color 0.3s ease;
+}
+
+/* Seções principais */
+.produtos, .sobre, .contato, .beneficios, .numeros, .whatsapp {
   padding: 60px 20px;
 }
 
@@ -74,7 +85,8 @@ nav a {
 }
 
 .card {
-  background-color: #eee;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
   padding: 20px;
   border-radius: 8px;
   flex: 1;
@@ -85,6 +97,36 @@ ol {
   padding-left: 20px;
 }
 
+/* Benefícios */
+.beneficios ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.1em;
+}
+
+.beneficios li {
+  margin-bottom: 10px;
+}
+
+/* Números */
+.numeros .card {
+  background-color: #f57c00;
+  color: #fff;
+  text-align: center;
+}
+
+/* WhatsApp */
+.whatsapp {
+  background-color: #e5f7ff;
+  text-align: center;
+}
+
+.whatsapp .btn {
+  background-color: #25d366;
+  margin-top: 20px;
+}
+
+/* Formulário */
 form {
   display: flex;
   flex-direction: column;
@@ -108,88 +150,12 @@ button {
   cursor: pointer;
 }
 
-footer {
-  background-color: #002b5c;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-}
-.beneficios ul {
-  list-style: none;
-  padding-left: 0;
-  font-size: 1.1em;
-}
-
-.beneficios li {
-  margin-bottom: 10px;
-}
-
-.numeros .cards {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-
-.numeros .card {
-  background-color: #f57c00;
-  color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  flex: 1;
-  min-width: 250px;
-  text-align: center;
-}
-
-.whatsapp {
-  background-color: #e5f7ff;
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.whatsapp .btn {
-  background-color: #25d366;
-  color: #fff;
-  padding: 15px 30px;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-  display: inline-block;
-  margin-top: 20px;
-}
-/* Paleta leve */
-body {
-  background-color: #f9f9f9;
-  color: #333;
-}
-
-header {
-  background-color: #ffffff;
-  border-bottom: 1px solid #ddd;
-}
-
-nav a {
-  color: #002b5c;
-}
-
-.hero {
-  background-color: #eaf2f8;
-}
-
-.btn {
-  background-color: #007bff;
-}
-
-.card {
-  background-color: #ffffff;
-  border: 1px solid #ddd;
-}
-
 /* Rodapé */
 footer {
   background-color: #f0f0f0;
   padding: 40px 20px 20px;
   font-size: 0.9em;
+  color: #333;
 }
 
 .rodape {
@@ -221,14 +187,32 @@ footer {
 .coluna ul a {
   text-decoration: none;
   color: #007bff;
+  transition: color 0.3s ease;
 }
 
 .coluna ul a:hover {
-  text-decoration: underline;
+  color: #0056b3;
 }
 
 .copyright {
   text-align: center;
   margin-top: 20px;
   color: #666;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .rodape {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
 }
