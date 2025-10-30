@@ -114,3 +114,46 @@ footer {
   text-align: center;
   padding: 20px 0;
 }
+.beneficios ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.1em;
+}
+
+.beneficios li {
+  margin-bottom: 10px;
+}
+
+.numeros .cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.numeros .card {
+  background-color: #f57c00;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.whatsapp {
+  background-color: #e5f7ff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.whatsapp .btn {
+  background-color: #25d366;
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
+}
