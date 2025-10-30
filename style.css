@@ -81,6 +81,10 @@ nav a {
   min-width: 250px;
 }
 
+ol {
+  padding-left: 20px;
+}
+
 form {
   display: flex;
   flex-direction: column;
